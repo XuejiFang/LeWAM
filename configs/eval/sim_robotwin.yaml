@@ -1,0 +1,31 @@
+# @package _global_
+ckpt: outputs/lewam
+gpu_id: 0
+
+EVALUATION:
+  robotwin_root: third_party/RoboTwin
+  task_name: null
+  task_config: [demo_clean, demo_randomized]
+  seed: 42
+  cases_dir: null # Optional directory of fixed cases for regression
+  eval_num_episodes: 100
+  output_root: outputs/evaluation/${now:%Y%m%d_%H%M%S}
+  dataset_stats_path: null
+  replan_steps: 24
+  diffusion_shift: 1
+  generator_seed: 42
+  save_video: true
+  num_shards: 1
+  shard_id: 0
+
+MULTIRUN:
+  gpu_ids: [0, 1, 2, 3, 4, 5, 6, 7]
+  workers_per_gpu: 4
+  shards_per_task: 4
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: .
+  output_subdir: null

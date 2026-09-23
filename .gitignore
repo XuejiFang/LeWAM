@@ -1,0 +1,8 @@
+.venvs/
+.cache/
+outputs/
+__pycache__/
+*.py[cod]
+*.log
+third_party/RoboTwin/assets/
+experiments/robotwin/cases/
