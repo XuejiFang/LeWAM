@@ -1,6 +1,6 @@
 <div align="center">
 
-# LeWAM: Latent Evolving World Action Models
+# LeWAM: Latent Evolving World Action Model
 
 [Xueji Fang](https://xuejifang.github.io/)<sup>1,2,3</sup>,
 [Boqiang Duan](https://scholar.google.com/citations?hl=zh-CN&user=tw3XyJ4AAAAJ)<sup>3</sup>,
@@ -30,6 +30,7 @@ With **0.4B trainable parameters**, LeWAM achieves **92.28% average success** on
 
 ## News
 
+- **[2026-09-24]** Our [paper](https://arxiv.org/abs/2609.27455) is now available on arXiv.
 - **[2026-09-23]** We release the inference code and [model weights](https://huggingface.co/XuejiFang/LeWAM).
 
 ## Getting Started
